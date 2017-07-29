@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Коментарии</title>
+</head>
+<body>
+    <div class="wrapper">
+    <!-- шапка -->
+        <header class="header">
+            <div class="container clearfix">
+                <div class="header__col-left">
+                    <a href="index.html" class="header__logo">
+                        <img src="img\logos\logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="header__col-right">
+                    <div class="contacts">
+                        <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
+                        <div class="contacts__elem">
+                            <a href="#" class="contacts__shedule">График работы</a>
+                            <div class="contacts__dropdown">
+                                <div class="contacts__time">
+                                    пн-вс: 09:00-20:00
+                                </div>
+                                <div class="contacts__lunch">
+                                    обед: 14:00-14:30
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="page">
+            <div class="container clearfix">
+                <!-- боковая панель -->
+                <aside class="sidebar">
+                    <nav class="menu">
+                        <ul class="nav-menu">
+                            <li class="nav-menu__item">
+                                <a href="about.html" class="nav-menu__link">
+                                    <span class="nav-menu__icon nav-menu__icon_triangle"></span>
+                                    <span class="nav-menu__text">Главная</span>
+                                </a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="team.html" class="nav-menu__link">
+                                    <span class="nav-menu__icon nav-menu__icon_cap"></span>
+                                    <span class="nav-menu__text">Экипаж</span>
+                                </a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="comments.html" class="nav-menu__link nav-menu__item_active">
+                                    <span class="nav-menu__icon nav-menu__icon_star"></span>
+                                    <span class="nav-menu__text">Отзывы</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <!-- содержание страницы -->
+                <main class="main-content main-content_padding_top">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="about.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item breadcrumbs__item_active">
+                            <a href="#" class="breadcrumbs__link">Отзывы</a>
+                        </li>
+                    </ul>
+                    <h1 class="comments-title">Отзывы</h1>
+                    <ul class="comments">
+                        <li class="comments__item clearfix">
+                            <img src="img/content/comments/palamarchuk .png" alt="photo" class="comments__photo">
+                            <div class="comments__content">
+                                <p class="comments__date">12.10.2016</p>
+                                <p class="comments__user">Ирина Паламарчук</p>
+                                <p class="comments__text">Ужасный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было. Не рекомендую эту компанию, лучше доплатить и лететь с комфортом.</p>
+                            </div>
+                        </li>
+                        <li class="comments__item clearfix">
+                            <img src="img\content\comments\belkov.png" alt="photo" class="comments__photo">
+                            <div class="comments__content">
+                                <p class="comments__date">01.02.2016</p>
+                                <p class="comments__user">Александр Бельков</p>
+                                <p class="comments__text">Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза, а еду – 1 раз. Единственное, что не понравилось, как то мало места для ног, но с этим у меня часто проблема, рост 2,1м.</p>
+                            </div>
+                        </li>
+                        <li class="comments__item clearfix">
+                            <img src="img/content/comments/nikolaenko.png" alt="photo" class="comments__photo">
+                            <div class="comments__content">
+                                <p class="comments__date">22.12.2015</p>
+                                <p class="comments__user">Игорь Николаенко</p>
+                                <p class="comments__text">Не кормили вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались. Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.</p>
+                            </div>
+                        </li>
+                        <li class="comments__item clearfix">
+                            <img src="img/content/comments/poryadnay.png" alt="photo" class="comments__photo">
+                            <div class="comments__content">
+                                <p class="comments__date">14.08.2015</p>
+                                <p class="comments__user">Анастасия Порядная</p>
+                                <p class="comments__text">За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за аналогичные рейсы. Мне понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую на пыль. Спасибо за полет! Рекомендую!</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination">
+                        <div class="pagination__status">
+                            Страница 1 из 7
+                        </div>
+                        <div class="pagination__controls">
+                            <a href="#" class="pagination__arrow pagination__arrow_prev"><</a>
+                            <ul class="pagination__list">
+                                <li class="pagination__item pagination__item_active">
+                                    <a href="#" class="pagination__link">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                  <a href="#" class="pagination__link">3</a>
+                                </li>
+                                 <li class="pagination__item">
+                                    <a href="#" class="pagination__link">4</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">5</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">6</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">7</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="pagination__arrow pagination__arrow_next">></a>
+                        </div>
+                    </div>
+                    <!--форма для отзывов-->
+                    <div class="form">
+                        <div class="form__title">
+                              Оставить отзыв
+                        </div>
+                        <div class="form__fields">
+                            <form class="form__elem" method="post">
+                                <div class="form__row clearfix">
+                                    <label class="form__cell">
+                                        <div class="form__field-title">
+                                            Ваше имя
+                                        </div>
+                                        <input type="text" value="" class="form__input-text" placeholder="Андрей">
+                                    </label>
+                                    <label class="form__cell">
+                                        <div class="form__field-title">
+                                            Ссылка на профиль VK
+                                        </div>
+                                        <input type="text" value="" class="form__input-text" placeholder="vk.com/example">
+                                    </label>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__textarea-label">
+                                        <div class="form__field-title">
+                                            Текст отзыва
+                                        </div>
+                                        <textarea class="form__textarea" placeholder="Мне понравилось"></textarea>
+                                    </label>
+                                </div>
+                                <div class="form__btns">
+                                    <div class="form__controls">
+                                        <div class="form__controls-btns clearfix">
+                                            <div class="form__controls-left">
+                                                <div class="form__controls-title">
+                                                    Отображать фото в отзыве?
+                                                </div>
+                                                <label class="form__radio">
+                                                    <input type="radio" name="review" class="form__radio-elem" checked>
+                                                    <div class="form__radio-fake"></div>
+                                                    <div class="form__radio-text">Да</div>
+                                                </label>
+                                                <label class="form__radio">
+                                                    <input type="radio" name="review" class="form__radio-elem">
+                                                    <div class="form__radio-fake"></div>
+                                                    <div class="form__radio-text">Нет</div>
+                                                </label>
+                                            </div>
+                                            <div class="form__controls-right">
+                                                <input type="submit" value="Отправить" class="form__submit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <!--conteiner центрируем содержание-->
+        <div class="container clearfix">
+            <div class="footer-autor">
+                Сделано с любовью и старанием<br>
+                на курсе «HTML + CSS» в <a class="footer-author__school" href="https://loftschool.com/">LoftSchool</a>.<br>
+                Автор работы: <a class="footer-author__link" href="#">Прохладов Вадим</a>
+            </div>
+            <div class="footer-logo">
+                <a class="footer-logo__link" href="index.html">
+                    <img src="img\logos\logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social__text">Наши социальные сети</div>
+                <ul class="footer-social__list">
+                    <li class="footer-social__item">
+                        <a class="footer-social__link" href="#">
+                            <img class="footer-social__img" src="img\icons\vk.png" alt="ВК">
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link" href="#">
+                            <img class="footer-social__img" src="img\icons\fasebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link" href="#">
+                            <img class="footer-social__img" src="img\icons\google.png" alt="Google+">
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link" href="#">
+                            <img class="footer-sociall__img" src="img\icons\tweeter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link" href="#">
+                            <img class="footer-social__img" src="img\icons\mail.png" alt="e-mail:">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+h1{
+    margin: 0;
+    padding: 0;
+}
+.team-title{
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 38px;
+    margin-top: 25px;
+    margin-bottom: 47px;
+}
+.team__list{
+    list-style: none;
+}
+.team__item{
+    width: 280px; /* Задание ширины логотипа партнёра */ 
+    display: inline-block; /* Строчно-блочный элемент */ 
+    text-align: center;
+    vertical-align: top;
+    margin-right: 16px;
+    padding-right: 11px;
+    padding-left: 11px;
+}
+.team__item:nth-child(3n){
+    margin-right: 0;
+}
+.team__description{
+    margin-top: 12px;
+}
+.team__item_padding1{
+    padding-bottom: 44px;
+}
+.team__item_padding2{
+    padding-bottom: 65px;
+}
+.team__name{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+.team__position{
+    color: #1c5bc3;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+.team__text{
+    font-size: 14px;
+    line-height: 21px;
+}

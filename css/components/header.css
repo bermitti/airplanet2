@@ -1,0 +1,82 @@
+
+
+.header{
+    box-sizing: border-box;
+    padding: 21px 0 13px;
+}
+.header__col-left,
+.header__col-right {
+    float: left;
+    width: 50%;
+}
+.header__col-right {
+    text-align: right;
+}
+.header__logo{
+    display: inline-block;
+}
+.contacts {
+    display: inline-block;
+}
+.contacts__elem {
+    position: relative;
+}
+
+/* всплывашка, время работы */
+.contacts__elem:hover .contacts__dropdown {
+    display: block;
+}
+.contacts__dropdown {
+    padding: 10px 15px;
+    box-shadow: 0px 0px 10px 0px rgba(23, 59, 117, 0.55);
+    background: #fff;
+    border-radius: 5px 0 5px 5px;
+    text-align: left;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1000;
+    margin-top: 13px;
+     display: none;  
+}
+/* прорисовываем треуголик на всплывашке */
+.contacts__dropdown:before {
+  content: "";
+  display: block;
+  border: 11px solid transparent;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+  position: absolute;
+  top: -11px;
+  right: 0;
+}
+
+/* оформление и подключение шрифтов */
+.contacts__phone {
+    font-weight: bold;
+    color: white;
+    font-size: 21px;
+    line-height: 21px;
+    text-decoration: none;
+}
+.contacts__elem a{
+    display: block;
+    font-weight: bold;
+    color: white; /* цвет ссылки можно отключать в классе? */
+    opacity: .7;
+    font-size: 14px;
+    line-height: 19px;
+}
+.contacts__shedule:hover{
+    opacity: 1;      /* убираем прозрачность при наведении */
+}
+.contacts__time {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1c5bc3;
+    margin-bottom: 10px;
+}
+.contacts__lunch {
+    font-size: 14px;
+    color: #221f1f;
+}

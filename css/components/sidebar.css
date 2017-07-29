@@ -1,0 +1,82 @@
+.sidebar {
+    float: left;
+    width: 180px;
+    padding-right: 10px;
+    padding-top: 43px;
+}
+
+/* обнулил в base.css
+.nav-menu {
+  list-style: none;
+} */
+
+.nav-menu__item {
+  margin-bottom: 27px;
+}
+.nav-menu__link {
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* иконки */
+.nav-menu__icon {
+    background: url('../../img/icons/icons-sprite.png') 0 0 no-repeat;
+    width: 23px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-menu__icon_triangle{
+    background-position: 2px 0;
+    opacity: .7;
+    transition: 1s; /*время задержки анимации*/
+}
+.nav-menu__icon_cap{
+    background-position: -23px 0;
+    opacity: .7;
+    transition: 1s; /*время задержки анимации*/
+}
+.nav-menu__icon_star{
+    background-position: -48px 0;
+    opacity: .7;
+    transition: 1s; /*время задержки анимации*/
+}
+.nav-menu__item:hover .nav-menu__icon{
+    opacity: 1;   
+    transition: 1s; /*время задержки анимации*/ 
+}
+
+.nav-menu__text{
+    padding-left: 12px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 18px;
+    color: #1c5bc3;
+    display: inline-block;
+    vertical-align: middle;
+    transition: 1s; /*время задержки анимации*/
+}
+.nav-menu__item_active .nav-menu__text{
+    color: #221f1f; 
+}
+.nav-menu__item_active .nav-menu__icon{
+    background-position-y: -19px;
+    opacity: 1;
+}
+
+/* свойства для класса при наведении */
+.nav-menu__link:hover .nav-menu__text{
+  font-style: italic;
+}
+/* свойства для активного класса при наведении */
+.nav-menu__item_active:hover .nav-menu__text{
+    font-style: normal; 
+    cursor: default; 
+}
+.nav-menu__item_active:hover .nav-menu__icon{
+    cursor: default;
+}

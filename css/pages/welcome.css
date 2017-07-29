@@ -1,0 +1,27 @@
+.wrapper_welcome{
+    background: url('../../img/bg/background-welcom.png') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    min-width: initial; /*что такое initial, как работает?*/
+    position: relative;
+}
+.welcome {
+    width: 190px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.welcome__btn{
+    display: inline-block;
+    text-decoration: none;
+}
+/* .welcome__btn:hover {
+    color: #fff;
+    background: #1c5bc3;
+    transition: 1s;
+} */

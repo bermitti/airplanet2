@@ -1,0 +1,35 @@
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    min-width: 1100px; /*ширина макета*/
+}
+
+/* защита от наползания футера */
+ .wrapper:after {
+    content: "";
+    height: 77px; /*высота футера*/
+    display: block;
+} 
+
+.header {
+    background-color: #1c5bc3;
+}
+.container {
+    width: 1060px; /*ширина содержимого макета*/
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.footer {
+    height: 77px;
+    margin-top: -77px; /* убираем вертикальную полосу прокрутки */
+    background-color: #1c5bc3; 
+}
+
+/* мои стили */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+

@@ -1,0 +1,160 @@
+.form{
+    width: 700px;
+    background: #f5f5f5;
+    border-radius: 3px;
+    padding: 54px 68px;
+    margin-bottom: 70px;
+}
+.form__title{
+    font-size: 49px;
+    line-height: 38px;
+    font-weight: bold;
+    color: #221f1f;
+    margin-bottom: 25px;
+}
+.form__row{
+    margin-bottom: 10px;
+}
+.form__cell{
+    display: block; /*label и без указания считает блоком*/
+    float: left;
+    width: 270px;
+}
+.form__cell:first-child{
+    margin-right: 20px;
+}
+.form__input-text {
+    width: 100%;
+    height: 45px;
+    padding: 13px 10px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+/* псевдоэлементы для Ch,Op,Saf и Moz и MEdge */
+.form__input-text::-webkit-input-placeholder{
+    color: #221f1f;
+    opacity: .5;
+}
+.form__input-text::-moz-placeholder{
+    color: #221f1f;
+    opacity: .5;
+}
+.form__input-text::-ms-input-placeholder{
+    color: #221f1f;
+    opacity: .5;
+}
+.form__input-text:focus{
+    border-color: #1c5bc3;
+    outline: none;
+}
+
+.form__textarea-label{
+    display: block;  /*работает и без указания*/
+}
+.form__field-title{
+    color: #221f1f;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.form__textarea{
+    height: 90px;
+    width: 100%;
+    border-radius: 3px;
+    resize: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+.form__textarea:focus{
+    border-color: #1c5bc3;
+    outline: none;  
+}
+
+.form__controls-title{
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.form__controls-left,
+.form__controls-right{
+    float: left;
+    width: 50%;
+}
+
+.form__radio{
+    display: inline-block;
+    margin-right: 13px;
+}
+.form__radio-elem{
+    display: inline-block;
+    vertical-align: middle;
+    display: none; /*убираем круги-селекторы*/
+}
+
+/* соседние селекторы С1+С2 , стили применяем только к С2*/
+.form__radio-elem:checked+.form__radio-fake {
+  border: 1px solid #1c5bc3;
+}
+.form__radio-elem:checked+.form__radio-fake:after {
+  display: block;
+}
+.form__radio-elem:checked+.form__radio-fake+.form__radio-text {
+  color: #1c5bc3;
+}
+.form__radio-fake{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 1px solid #cbcbcb;
+  position: relative;
+}
+.form__radio-fake:after {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 8px;
+  background: #1c5bc3;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.form__radio-text{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+
+.form__controls-right{
+    margin-top: 5px;
+    text-align: right;
+    position: relative;
+}
+.form__submit{
+    border-radius: 3px;
+    display: inline-block;
+    background: #27273e;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 17px 45px 13px 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.form__submit:hover{
+    background: #1c5bc3;
+}
+/* псевдоэлемент с :: */
+.form__controls-right::before{
+    content: url(../../img/icons/white-arrow.png);
+    position: absolute;
+    top: 13px;
+    left: 243px;
+}
+
+
